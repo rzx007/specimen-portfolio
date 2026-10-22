@@ -6,6 +6,20 @@
 <title>Ivo Kestrel — Design Engineer, Lisbon</title>
 <meta name="description" content="Ivo Kestrel is a design engineer in Lisbon building interfaces that behave like instruments: measured, responsive, and a little bit alive.">
 <meta name="theme-color" content="#080808">
+<meta name="author" content="Ivo Kestrel">
+<link rel="canonical" href="https://rzx007.github.io/specimen-portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ivo Kestrel — Design Engineer, Lisbon">
+<meta property="og:description" content="A parallax personal page set from one 128-character seed string: 55 distinct glyphs, folded to 35 case classes, read as fourteen hexadecimal values. The palette is derived, not chosen.">
+<meta property="og:url" content="https://rzx007.github.io/specimen-portfolio/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ivo Kestrel — Design Engineer">
+<meta name="twitter:description" content="A parallax portfolio whose colour system is derived from a single random string.">
+
+<!-- the mark: fourteen stops, and the one that is missing -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080808'/%3E%3Cg fill='%23EFEFEF'%3E%3Crect x='6' y='6' width='20' height='2'/%3E%3Crect x='6' y='10' width='20' height='2' opacity='.8'/%3E%3Crect x='6' y='14' width='20' height='2' opacity='.62'/%3E%3Crect x='6' y='18' width='20' height='2' opacity='.44'/%3E%3Crect x='6' y='22' width='20' height='2' opacity='.27'/%3E%3Crect x='6' y='26' width='11' height='2' fill='%23E04A2B'/%3E%3C/g%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +47,7 @@
 
   --txt:#DEDEDE;
   --txt-2:#9A9A9A;
-  --txt-3:#676767;
+  --txt-3:#7A7A7A;
   --line:rgba(239,239,239,.14);
   --line-2:rgba(239,239,239,.07);
 
@@ -217,7 +231,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 
 /* the specimen strands */
 .strands{position:relative;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);padding:clamp(11px,1.5vw,20px) 0}
-.strands__cap{display:flex;align-items:center;gap:clamp(8px,1.4vw,20px);color:var(--r4);margin-bottom:clamp(7px,1vw,12px)}
+.strands__cap{display:flex;align-items:center;gap:clamp(8px,1.4vw,20px);color:var(--r7);margin-bottom:clamp(7px,1vw,12px)}
 .strands__cap span:nth-child(1){flex:none;width:3.4em}
 .strands__cap span:nth-child(2){flex:1 1 auto;min-width:0}
 .strands__cap span:nth-child(3){flex:none;width:clamp(52px,7vw,104px);text-align:right}
@@ -230,8 +244,8 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
   line-height:1.32;
   will-change:transform;
 }
-.strand .c{color:var(--txt-3);transition:color .5s var(--ease)}
-.strand .c.is-digit{color:var(--r11)}
+.strand .c{color:var(--r6);transition:color .5s var(--ease)}
+.strand .c.is-digit{color:var(--r13)}
 .strand .c.is-double{color:var(--r13);box-shadow:inset 0 -1px 0 0 var(--accent)}
 .strand .idx{flex:none;width:3.4em;color:var(--r4);font-size:.72em;letter-spacing:.08em}
 .strand .body{flex:1 1 auto;min-width:0;display:grid;grid-template-columns:repeat(16,minmax(0,1fr));align-items:center}
@@ -301,7 +315,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 .ramp__legend div b{color:var(--txt-2);font-weight:400;font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.1em}
 
 .ramp__rows{grid-column:6/span 7}
-.ramp__scale{display:grid;grid-template-columns:46px minmax(0,1fr) 82px 88px;gap:0;padding-bottom:8px;color:var(--r4)}
+.ramp__scale{display:grid;grid-template-columns:46px minmax(0,1fr) 82px 88px;gap:0;padding-bottom:8px;color:var(--r7)}
 .ramp__scale span:nth-child(2){padding-left:12px}
 .ramp__scale span:nth-child(3){padding-right:0}
 .ramp__scale span:nth-child(4){text-align:right}
@@ -313,15 +327,15 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 }
 .ramp__row:last-child{border-bottom:0}
 .ramp__row:hover{background:rgba(239,239,239,.035)}
-.ramp__i{align-self:center;padding-left:12px;color:var(--r5);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.08em}
+.ramp__i{align-self:center;padding-left:12px;color:var(--r8);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.08em}
 .ramp__bar{display:block;height:100%;background:var(--c);transform:scaleX(0);transform-origin:0 50%;will-change:transform;transition:filter .3s}
 .ramp__row:hover .ramp__bar{filter:brightness(1.12)}
 .ramp__hex{align-self:center;padding-left:12px;font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.06em;color:var(--txt-2);transition:color .3s}
 .ramp__row:hover .ramp__hex{color:var(--txt)}
-.ramp__use{align-self:center;padding-right:12px;font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--r4);text-align:right;transition:color .3s}
+.ramp__use{align-self:center;padding-right:12px;font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--r8);text-align:right;transition:color .3s}
 .ramp__row:hover .ramp__use{color:var(--r9)}
 .ramp__row.is-copied .ramp__use{color:var(--accent)}
-.ramp__foot{display:flex;justify-content:space-between;gap:12px;padding-top:9px;color:var(--r4)}
+.ramp__foot{display:flex;justify-content:space-between;gap:12px;padding-top:9px;color:var(--r7)}
 @media (max-width:900px){
   .ramp__body{grid-template-columns:1fr}
   .ramp__aside{grid-column:1/-1;position:static;margin-bottom:26px}
@@ -337,14 +351,14 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
    ============================================================ */
 .work__list{border-top:1px solid var(--line)}
 .work__row{
-  position:relative;display:grid;
+  position:relative;display:grid;width:100%;text-align:left;font:inherit;color:inherit;appearance:none;
   grid-template-columns:52px minmax(0,1fr) 210px 78px 30px;
   align-items:center;gap:clamp(8px,1.4vw,20px);
   padding:clamp(15px,1.9vw,26px) 0;border-bottom:1px solid var(--line-2);
   transition:padding .5s var(--ease),background .4s var(--ease);
 }
 .work__row:hover{padding-left:10px;background:rgba(239,239,239,.022)}
-.work__i{color:var(--r5);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.08em}
+.work__i{color:var(--r7);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.08em}
 .work__t{
   font-size:clamp(1.24rem,2.35vw,2.05rem);line-height:1.06;letter-spacing:-.028em;font-weight:500;
   display:flex;align-items:baseline;gap:.5em;flex-wrap:wrap;
@@ -355,7 +369,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 .work__row:hover .work__d{color:var(--txt-2)}
 .work__y{color:var(--r7);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.08em;text-align:right}
 .work__a{color:var(--r6);justify-self:end;transition:transform .5s var(--ease),color .3s}
-.work__row:hover .work__a{transform:translate(3px,-3px);color:var(--r12)}
+.work__row:hover .work__a{transform:translateX(4px);color:var(--r12)}
 .work__more{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:clamp(26px,3.4vw,44px);flex-wrap:wrap}
 .work__more p{color:var(--txt-3);max-width:42ch;font-size:var(--t-small)}
 
@@ -372,6 +386,42 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
   .work__row{grid-template-columns:38px minmax(0,1fr) 56px;gap:10px}
   .work__d,.work__a{display:none}
   .work__t .serif{display:none}
+}
+
+/* ---------- case note panel ---------- */
+.case{position:fixed;inset:0;z-index:1300;visibility:hidden;pointer-events:none;transition:visibility 0s linear .62s}
+.case.is-open{visibility:visible;pointer-events:auto;transition:visibility 0s}
+.case__scrim{position:absolute;inset:0;background:rgba(4,4,4,.74);backdrop-filter:blur(5px);opacity:0;transition:opacity .45s var(--ease)}
+.case.is-open .case__scrim{opacity:1}
+.case__panel{
+  position:absolute;top:0;right:0;height:auto;max-height:100%;width:min(540px,100%);
+  display:flex;flex-direction:column;
+  background:var(--bg-lift);border-left:1px solid var(--line);border-bottom:1px solid var(--line);
+  transform:translateX(101%);transition:transform .62s var(--ease);
+  overflow-y:auto;overscroll-behavior:contain;
+}
+.case.is-open .case__panel{transform:none}
+.case__bar{
+  position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:15px clamp(18px,3vw,28px);border-bottom:1px solid var(--line-2);background:var(--bg-lift);
+}
+.case__idx{color:var(--txt-3)}
+.case__close{color:var(--txt-2);border:1px solid var(--line);padding:6px 10px;border-radius:2px;transition:color .3s,border-color .3s}
+.case__close:hover{color:var(--txt);border-color:var(--r7)}
+.case__art{border-bottom:1px solid var(--line-2)}
+.case__art svg{display:block;width:100%;height:auto}
+.case__body{padding:clamp(20px,3vw,30px) clamp(18px,3vw,28px) clamp(26px,4vw,40px);display:flex;flex-direction:column;gap:13px}
+.case__body h3{font-size:clamp(1.45rem,2.6vw,2.05rem);line-height:1.06;letter-spacing:-.03em;font-weight:500}
+.case__meta{color:var(--txt-3)}
+.case__note{color:var(--txt-2);font-size:var(--t-small);line-height:1.62;max-width:44ch}
+.case__metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:6px 0 0;padding-top:17px;border-top:1px solid var(--line-2)}
+.case__metrics div{display:flex;flex-direction:column;gap:3px}
+.case__metrics dt{color:var(--txt-3);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.1em;text-transform:uppercase}
+.case__metrics dd{margin:0;font-size:clamp(1rem,1.6vw,1.2rem);letter-spacing:-.012em;color:var(--txt)}
+@media (max-width:640px){
+  .case__panel{top:auto;bottom:0;height:auto;max-height:88svh;width:100%;border-left:0;border-top:1px solid var(--line);border-bottom:0;transform:translateY(101%)}
+  .case.is-open .case__panel{transform:none}
+  .case__metrics{grid-template-columns:1fr;gap:11px}
 }
 
 /* ============================================================
@@ -423,7 +473,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
   position:absolute;top:clamp(74px,9vh,104px);right:var(--pad);z-index:3;
   display:flex;align-items:center;gap:clamp(9px,1.3vw,20px);pointer-events:auto;
 }
-.st-readout .r{display:flex;align-items:center;gap:7px;color:var(--r4);transition:color .3s}
+.st-readout .r{display:flex;align-items:center;gap:7px;color:var(--r6);transition:color .3s}
 .st-readout .r::before{content:"";width:9px;height:1px;background:currentColor;transition:width .4s var(--ease)}
 .st-readout .r.on{color:var(--txt)}
 .st-readout .r.on::before{width:22px;background:var(--r13)}
@@ -454,7 +504,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
    04 THE ABSENT FIVE — inversion
    ============================================================ */
 .absent{background:var(--paper);color:#0F0F0F;padding:var(--sec) 0;position:relative}
-.absent .eyebrow{color:#6E6E6E}
+.absent .eyebrow{color:#5E5E5E}
 .absent .eyebrow::before{background:var(--accent)}
 .absent h2{
   font-size:clamp(2rem,5.4vw,4.4rem);line-height:1.02;letter-spacing:-.04em;font-weight:500;
@@ -480,7 +530,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 .dig.gap:hover::after{transform:scaleX(1)}
 .dig.filled{color:var(--accent);-webkit-text-stroke:0;animation:fillin .7s var(--ease)}
 @keyframes fillin{0%{transform:translateY(.3em) scale(.6);opacity:0}60%{transform:translateY(0) scale(1.1)}100%{transform:none;opacity:1}}
-.strip__cap{margin-left:auto;color:#6E6E6E;max-width:22ch;line-height:1.45;font-size:var(--t-small);text-align:right}
+.strip__cap{margin-left:auto;color:#5E5E5E;max-width:22ch;line-height:1.45;font-size:var(--t-small);text-align:right}
 .absent__cols{grid-column:1/span 12;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px)}
 .absent__cols h3{font-size:var(--t-small);letter-spacing:.02em;text-transform:none;color:#0F0F0F;margin-bottom:.7em;font-weight:600;display:flex;gap:.6em;align-items:baseline}
 .absent__cols h3 span{font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);color:var(--accent);letter-spacing:.1em}
@@ -500,7 +550,7 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 .ledger__row{display:grid;grid-template-columns:minmax(0,1fr) minmax(96px,auto) minmax(0,1fr);align-items:baseline;gap:16px;padding:clamp(9px,1.2vw,14px) 0;border-bottom:1px solid var(--line-2)}
 .ledger__k{color:var(--txt-2);font-size:var(--t-small)}
 .ledger__v{font-family:"JetBrains Mono",monospace;font-size:clamp(.95rem,1.4vw,1.2rem);letter-spacing:-.01em;color:var(--txt);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.ledger__n{color:var(--r5);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.1em;text-align:right;white-space:nowrap}
+.ledger__n{color:var(--r7);font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.1em;text-align:right;white-space:nowrap}
 .ledger__aside{grid-column:1/span 3;position:sticky;top:96px;align-self:start}
 .ledger__aside p{color:var(--txt-3);font-size:var(--t-small);line-height:1.6;max-width:28ch}
 .ledger__aside p+p{margin-top:.9em}
@@ -571,9 +621,9 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
 
 /* footer */
 .foot{border-top:1px solid var(--line-2);padding:18px 0 26px}
-.foot__in{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;color:var(--r5)}
+.foot__in{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;color:var(--r7)}
 .foot__seed{display:flex;align-items:center;gap:10px;color:var(--r6);max-width:min(100%,560px);overflow:hidden}
-.foot__seed code{font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--r6);max-width:44ch}
+.foot__seed code{font-family:"JetBrains Mono",monospace;font-size:var(--t-mono);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--r7);max-width:44ch}
 .foot__seed button{flex:none;color:var(--r8);border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
 .foot__seed button:hover{color:var(--r12);border-color:var(--r6)}
 .foot__right{display:flex;align-items:center;gap:18px}
@@ -719,41 +769,41 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
       </div>
 
       <div class="work__list" id="workList">
-        <a class="work__row" href="#work" data-plate="0" data-reveal>
+        <button class="work__row" type="button" data-plate="0" data-case="0" data-reveal>
           <span class="work__i">01</span>
           <span class="work__t">Halden Ledger <span class="serif">carbon accounting</span></span>
           <span class="work__d">Design engineering</span>
           <span class="work__y">2025</span>
-          <span class="work__a" aria-hidden="true">↗</span>
-        </a>
-        <a class="work__row" href="#work" data-plate="1" data-reveal>
+          <span class="work__a" aria-hidden="true">→</span>
+        </button>
+        <button class="work__row" type="button" data-plate="1" data-case="1" data-reveal>
           <span class="work__i">02</span>
           <span class="work__t">Tidal Atlas <span class="serif">flood modelling</span></span>
           <span class="work__d">Data instrument</span>
           <span class="work__y">2024</span>
-          <span class="work__a" aria-hidden="true">↗</span>
-        </a>
-        <a class="work__row" href="#work" data-plate="2" data-reveal>
+          <span class="work__a" aria-hidden="true">→</span>
+        </button>
+        <button class="work__row" type="button" data-plate="2" data-case="2" data-reveal>
           <span class="work__i">03</span>
           <span class="work__t">Pale Fire <span class="serif">record label</span></span>
           <span class="work__d">Identity &amp; web</span>
           <span class="work__y">2024</span>
-          <span class="work__a" aria-hidden="true">↗</span>
-        </a>
-        <a class="work__row" href="#work" data-plate="3" data-reveal>
+          <span class="work__a" aria-hidden="true">→</span>
+        </button>
+        <button class="work__row" type="button" data-plate="3" data-case="3" data-reveal>
           <span class="work__i">04</span>
           <span class="work__t">Ledger of Small Hours <span class="serif">reading app</span></span>
           <span class="work__d">Editorial interface</span>
           <span class="work__y">2023</span>
-          <span class="work__a" aria-hidden="true">↗</span>
-        </a>
-        <a class="work__row" href="#work" data-plate="4" data-reveal>
+          <span class="work__a" aria-hidden="true">→</span>
+        </button>
+        <button class="work__row" type="button" data-plate="4" data-case="4" data-reveal>
           <span class="work__i">05</span>
           <span class="work__t">Station North <span class="serif">wayfinding</span></span>
           <span class="work__d">Signage system</span>
           <span class="work__y">2022</span>
-          <span class="work__a" aria-hidden="true">↗</span>
-        </a>
+          <span class="work__a" aria-hidden="true">→</span>
+        </button>
       </div>
 
       <div class="work__more">
@@ -921,6 +971,23 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
     </div>
   </div>
 </footer>
+
+<div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle" aria-hidden="true">
+  <div class="case__scrim" data-case-close></div>
+  <div class="case__panel">
+    <div class="case__bar">
+      <span class="case__idx mono" id="caseIdx">01 / 05</span>
+      <button class="case__close mono" id="caseClose" type="button">Close <span aria-hidden="true">✕</span></button>
+    </div>
+    <div class="case__art" id="caseArt" aria-hidden="true"></div>
+    <div class="case__body">
+      <h3 id="caseTitle">—</h3>
+      <p class="case__meta mono" id="caseMeta">—</p>
+      <p class="case__note" id="caseNote">—</p>
+      <dl class="case__metrics" id="caseMetrics"></dl>
+    </div>
+  </div>
+</div>
 
 <div class="plate" id="plate" aria-hidden="true">
   <div class="plate__in">
@@ -1594,6 +1661,111 @@ body.on-paper .cursor{border-color:rgba(15,15,15,.55)}
         row.addEventListener("pointerleave", function () {
           gsap.to(plate, { opacity: 0, duration: 0.3, ease: "power2.out" });
         });
+      });
+    })();
+
+    /* ---------- case note panel ---------- */
+    (function caseNotes() {
+      var root = document.getElementById("case");
+      if (!root) return;
+      var closeBtn = document.getElementById("caseClose");
+      var art = document.getElementById("caseArt");
+      var titleEl = document.getElementById("caseTitle");
+      var metaEl = document.getElementById("caseMeta");
+      var noteEl = document.getElementById("caseNote");
+      var metricsEl = document.getElementById("caseMetrics");
+      var idxEl = document.getElementById("caseIdx");
+      var isOpen = false, lastFocus = null, openedAt = 0;
+
+      var NOTES = [
+        {
+          title: "Halden Ledger", year: "2025",
+          role: "Design engineering · Carbon accounting, Oslo",
+          note: "Every figure in a carbon ledger is an estimate with a confidence band, but the old interface rounded to a single number — which made the product feel more certain than the science behind it. We shipped ranges first and totals second, and wrote the token file so that no component could reintroduce a bare figure.",
+          metrics: [["Components", "37"], ["Token files", "1"], ["Orphaned styles", "0"]]
+        },
+        {
+          title: "Tidal Atlas", year: "2024",
+          role: "Data instrument · Flood modelling, Rotterdam",
+          note: "Flood projections for a water board deciding where not to build. The difficulty was time: the model returns eighty years of high-water marks, far more than any chart can hold at once. So the axis became the interface — scrubbing the century is the primary gesture, and the map answers as you move.",
+          metrics: [["Time axis", "80 yr"], ["Model runs", "6"], ["Contrast", "AA"]]
+        },
+        {
+          title: "Pale Fire", year: "2024",
+          role: "Identity & web · Independent record label",
+          note: "Sleeves generated from each track's waveform, constrained to a fixed grid. The type never moves between releases; only the field inside it does. Twenty-three releases in, it still does not read as a system — which is the only test of a system this rigid that matters.",
+          metrics: [["Releases", "23"], ["Grid", "1"], ["Photographs", "0"]]
+        },
+        {
+          title: "Ledger of Small Hours", year: "2023",
+          role: "Editorial interface · Reading app",
+          note: "A reader for people who read at three in the morning. Dark by default, no progress bars, no streaks, no notifications. The only figure on screen is the page number, and it dims when you stop turning — so the interface acknowledges you without asking anything of you.",
+          metrics: [["Metrics shown", "1"], ["Notifications", "0"], ["App Store", "4.9"]]
+        },
+        {
+          title: "Station North", year: "2022",
+          role: "Signage system · Transit wayfinding",
+          note: "A station where three operators' systems meet, and two typefaces had to agree on a single arrow. The deliverable was less the 140 signs than the rule set behind them: short enough for a maintenance crew to apply at two in the morning, precise enough that they cannot drift.",
+          metrics: [["Signs", "140"], ["Operators", "3"], ["Rule set", "1"]]
+        }
+      ];
+
+      function fill(i) {
+        var d = NOTES[i];
+        if (!d) return;
+        art.innerHTML = plateSVG(i);
+        titleEl.textContent = d.title;
+        metaEl.textContent = d.year + " — " + d.role;
+        noteEl.textContent = d.note;
+        idxEl.textContent = String(i + 1).padStart(2, "0") + " / " + String(NOTES.length).padStart(2, "0");
+        metricsEl.innerHTML = d.metrics.map(function (m) {
+          return "<div><dt>" + m[0] + "</dt><dd>" + m[1] + "</dd></div>";
+        }).join("");
+      }
+
+      function openCase(i, trigger) {
+        if (isOpen) return;
+        isOpen = true;
+        openedAt = Date.now();
+        lastFocus = trigger || document.activeElement;
+        fill(i);
+        root.classList.add("is-open");
+        root.setAttribute("aria-hidden", "false");
+        document.body.classList.add("is-locked");
+        if (lenis) lenis.stop();
+        gsap.to("#plate", { opacity: 0, duration: 0.2 });
+        closeBtn.focus({ preventScroll: true });
+      }
+
+      function closeCase() {
+        if (!isOpen) return;
+        isOpen = false;
+        root.classList.remove("is-open");
+        root.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("is-locked");
+        if (lenis) lenis.start();
+        if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+      }
+
+      Array.prototype.forEach.call(document.querySelectorAll("[data-case]"), function (btn) {
+        btn.addEventListener("click", function () {
+          openCase(parseInt(btn.getAttribute("data-case"), 10), btn);
+        });
+      });
+      // one delegated handler: the close button and the scrim both dismiss,
+      // and a click that belongs to the opening gesture is ignored
+      root.addEventListener("click", function (e) {
+        if (!isOpen) return;
+        if (Date.now() - openedAt < 260) return;
+        if (e.target.closest(".case__close") || e.target.closest("[data-case-close]")) {
+          closeCase();
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (!isOpen) return;
+        if (e.key === "Escape") { e.preventDefault(); closeCase(); return; }
+        if (e.key === "Tab") { e.preventDefault(); closeBtn.focus({ preventScroll: true }); }
       });
     })();
 
